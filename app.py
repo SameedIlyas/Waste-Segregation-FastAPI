@@ -10,7 +10,7 @@ app = FastAPI()
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Path to the saved model
-model_path = "resnet_model.pth"  # Make sure this is in the project folder
+model_path = "model/resnet_model.pth"  # Make sure this is in the project folder
 
 # Load the model architecture and weights
 model = models.resnet18(pretrained=False)
